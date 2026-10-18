@@ -49,14 +49,14 @@ public class Inventory : MonoBehaviour
         return true;
     }
 
-    public int jumlah(string nama) 
+    public int Jumlah(string nama)    
     {
         int n = 0;
         foreach (var s in isi) if (s == nama) n++;
         return n;
     }
 
-    public bool pakai(string nama) 
+    public bool Pakai(string nama)   
     {
         bool berhasil = isi.Remove(nama);
         if (berhasil) Refresh();

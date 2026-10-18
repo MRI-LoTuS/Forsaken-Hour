@@ -113,6 +113,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Ability",
+                    "type": "Button",
+                    "id": "85778d9c-6223-4abf-9a6e-70debc512b2f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "isiulang",
+                    "type": "Button",
+                    "id": "2995dd93-56b3-43d6-9aab-467328cf646f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -542,6 +560,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Take",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c6f6aae-f7ce-4a83-b97d-8ae3b2a9e831",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ability",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "30f8dc24-8974-40e2-b181-ea92094240cb",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "isiulang",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
