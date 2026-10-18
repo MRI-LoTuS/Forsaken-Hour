@@ -32,11 +32,10 @@ public class Interactor : MonoBehaviour
     void Update()
     {
         target = null;
+        Ray ray = new Ray(kamera.transform.position, kamera.transform.forward);
 
-        if (!PauseMenu.isPaused)
-        {
-            Ray ray = new Ray(kamera.transform.position, kamera.transform.forward);
-            if (Physics.Raycast(ray, out RaycastHit hit, jarak))
+        if (!PauseMenu.isPaused && !Inventory.terbuka && Physics.Raycast(ray, out RaycastHit hit, jarak))
+        {       
                 target = hit.collider.GetComponentInParent<Pickup>();
         }
 
@@ -57,7 +56,7 @@ public class Interactor : MonoBehaviour
 
     void OnInteract(InputAction.CallbackContext context)
     {
-        if (PauseMenu.isPaused || target == null) return;
+        if (PauseMenu.isPaused || Inventory.terbuka || target == null) return;
 
         if (inventory.Tambah(target.namaItem))
             Destroy(target.gameObject);
