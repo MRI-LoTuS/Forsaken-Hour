@@ -97,22 +97,26 @@ public class NightVision : MonoBehaviour
     void OnIsiUlang(InputAction.CallbackContext context)
     {
         if (PauseMenu.isPaused) return;
+        IsiUlangBaterai();
+    }
 
+    public bool IsiUlangBaterai()
+    {
         if (energi >= energiMaks)
         {
             Status("Baterai masih penuh");
-            return;
+            return false;
         }
 
         if (inventory != null && inventory.Pakai(namaItemBaterai))
         {
             energi = energiMaks;
             Status("Baterai diisi ulang");
+            return true;
         }
-        else
-        {
-            Status("Tidak ada baterai di inventory");
-        }
+
+        Status("Tidak ada baterai di inventory");
+        return false;
     }
 
     void SetAktif(bool nilai)
