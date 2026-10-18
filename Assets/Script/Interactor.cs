@@ -11,6 +11,7 @@ public class Interactor : MonoBehaviour
     [SerializeField] private InputActionReference interactAction;
 
     Pickup target;
+    ForsakenClock jam;
 
     void OnEnable()
     {
@@ -29,34 +30,52 @@ public class Interactor : MonoBehaviour
         }
     }
 
+    bool Terblokir()
+    {
+        return PauseMenu.isPaused || Inventory.terbuka || ForsakenClock.selesai;
+    }
+
     void Update()
     {
         target = null;
-        Ray ray = new Ray(kamera.transform.position, kamera.transform.forward);
+        jam = null;
 
-        if (!PauseMenu.isPaused && !Inventory.terbuka && Physics.Raycast(ray, out RaycastHit hit, jarak))
-        {       
+        if (!Terblokir())
+        {
+            Ray ray = new Ray(kamera.transform.position, kamera.transform.forward);
+            if (Physics.Raycast(ray, out RaycastHit hit, jarak))
+            {
                 target = hit.collider.GetComponentInParent<Pickup>();
+                jam = hit.collider.GetComponentInParent<ForsakenClock>();
+            }
         }
 
         if (teksPrompt != null)
         {
-            if (target != null)
-            {
-                // Mengambil nama tombol secara otomatis dari New Input System (contoh: "E", "F", atau "Gamepad West")
-                string tombolInteract = GetBindingDisplayName();
-                teksPrompt.text = $"[{tombolInteract}] Ambil {target.namaItem}";
-            }
-            else
-            {
-                teksPrompt.text = "";
-            }
+            if (jam != null) teksPrompt.text = jam.TeksPrompt();
+            else if (target != null) teksPrompt.text = "[F] Ambil " + target.namaItem;
+            else teksPrompt.text = "";
         }
     }
 
     void OnInteract(InputAction.CallbackContext context)
     {
-        if (PauseMenu.isPaused || Inventory.terbuka || target == null) return;
+        if (Terblokir()) return;
+
+        if (jam != null)
+        {
+            jam.Interaksi();
+            return;
+        }
+
+        if (target == null) return;
+
+        if (target.adalahKunci)
+        {
+            if (KeyManager.Instance != null) KeyManager.Instance.AmbilKunci();
+            Destroy(target.gameObject);
+            return;
+        }
 
         if (inventory.Tambah(target.namaItem))
             Destroy(target.gameObject);

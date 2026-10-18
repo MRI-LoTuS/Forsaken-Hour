@@ -66,7 +66,7 @@ public class Inventory : MonoBehaviour
 
     void OnInventory(InputAction.CallbackContext context)
     {
-        if (PauseMenu.isPaused) return;
+        if (PauseMenu.isPaused || ForsakenClock.selesai) return;
         if (terbuka) Tutup();
         else Buka();
     }
