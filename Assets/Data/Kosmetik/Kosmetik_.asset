@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c9b181fdd49454cb38b3bb44ca3f7d, type: 3}
   m_Name: Kosmetik_
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticData
-  id: 
-  namaTampil: 
-  tipe: 0
-  harga: 100
-  dimilikiAwal: 0
+  id: sarung_hitam
+  namaTampil: Sarung Tangan Hitam
+  tipe: 1
+  harga: 0
+  dimilikiAwal: 1
   prodiKhusus: {fileID: 0}
   ikon: {fileID: 0}
   prefabTampilan: {fileID: 0}

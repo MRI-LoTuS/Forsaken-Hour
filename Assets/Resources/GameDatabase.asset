@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ae13e212940674a8d171475ccb1d00, type: 3}
   m_Name: GameDatabase
   m_EditorClassIdentifier: Assembly-CSharp::GameDatabase
-  semuaProdi: []
-  semuaKosmetik: []
+  semuaProdi:
+  - {fileID: 11400000, guid: 46c3ae47d40290c41870642efb3e2de9, type: 2}
+  - {fileID: 11400000, guid: 3dfd06cc4a180014e98508f860040a75, type: 2}
+  - {fileID: 11400000, guid: b84c281d38c9f8d46afb30fb0e5a4908, type: 2}
+  - {fileID: 11400000, guid: 8c9809bbe81db7d449e1f77adb5ef950, type: 2}
+  - {fileID: 11400000, guid: 77bc98ec3af55dc4683255f7ad4bb85d, type: 2}
+  - {fileID: 11400000, guid: a387e67805fd5e94a8efebaacb2bd9c6, type: 2}
+  semuaKosmetik:
+  - {fileID: 11400000, guid: b303a4316c424e74281f0c2a77c38bc5, type: 2}
+  - {fileID: 11400000, guid: 30b93c1fabc9a47469125375564a9aea, type: 2}
+  - {fileID: 11400000, guid: 8dc75f81c3a66f64a80c31cd26b4a584, type: 2}
