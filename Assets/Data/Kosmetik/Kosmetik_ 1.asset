@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c9b181fdd49454cb38b3bb44ca3f7d, type: 3}
   m_Name: Kosmetik_ 1
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticData
-  id: 
-  namaTampil: 
+  id: topi_kampus
+  namaTampil: Topi Kampus
   tipe: 0
   harga: 100
   dimilikiAwal: 0

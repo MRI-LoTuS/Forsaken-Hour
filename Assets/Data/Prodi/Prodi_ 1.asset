@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293784bd58676184a871b6c487961fba, type: 3}
   m_Name: Prodi_ 1
   m_EditorClassIdentifier: Assembly-CSharp::ProdiData
-  id: 
-  namaTampil: 
+  id: kimia
+  namaTampil: Teknik Kimia
   deskripsi: 
-  namaAbility: 
+  namaAbility: Smoke bomb
   deskripsiAbility: 
   ikon: {fileID: 0}
   terbukaAwal: 0

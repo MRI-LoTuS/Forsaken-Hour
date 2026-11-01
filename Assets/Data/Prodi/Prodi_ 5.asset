@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293784bd58676184a871b6c487961fba, type: 3}
   m_Name: Prodi_ 5
   m_EditorClassIdentifier: Assembly-CSharp::ProdiData
-  id: 
-  namaTampil: 
+  id: informatika
+  namaTampil: Informatika
   deskripsi: 
-  namaAbility: 
+  namaAbility: Akses CCTV
   deskripsiAbility: 
   ikon: {fileID: 0}
   terbukaAwal: 0

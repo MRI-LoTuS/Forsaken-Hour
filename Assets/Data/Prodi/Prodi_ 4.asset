@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293784bd58676184a871b6c487961fba, type: 3}
   m_Name: Prodi_ 4
   m_EditorClassIdentifier: Assembly-CSharp::ProdiData
-  id: 
-  namaTampil: 
+  id: elektro
+  namaTampil: Teknik Elektro
   deskripsi: 
-  namaAbility: 
+  namaAbility: Lampu Dan Flash
   deskripsiAbility: 
   ikon: {fileID: 0}
   terbukaAwal: 0

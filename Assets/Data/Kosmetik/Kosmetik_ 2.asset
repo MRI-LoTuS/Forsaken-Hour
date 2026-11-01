@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c9b181fdd49454cb38b3bb44ca3f7d, type: 3}
   m_Name: Kosmetik_ 2
   m_EditorClassIdentifier: Assembly-CSharp::CosmeticData
-  id: 
-  namaTampil: 
-  tipe: 0
+  id: senter_biru
+  namaTampil: Senter Biru
+  tipe: 2
   harga: 100
   dimilikiAwal: 0
   prodiKhusus: {fileID: 0}
