@@ -141,7 +141,7 @@ Ringkasan: **13 selesai** dan **5 sebagian** dari 30 FR.
 
 ## Belum dikerjakan
 
-Bagian ini sudah direncanakan di GDD dan SRS tetapi belum ada di repositori.
+Bagian ini sudah direncanakan di GDD tetapi belum ada di repositori.
 
 - Sanity, Contamination, dan Sanity and Contamination Director AI.
 - Lima ability lain: Smoke Bomb (Teknik Kimia), Pengalih Perhatian (Teknik Mesin), Shortcut Blueprint (Arsitektur), Lampu dan Flash (Teknik Elektro), dan Akses CCTV (Informatika). Datanya sudah ada di `ProdiData`, mekanik belum.
