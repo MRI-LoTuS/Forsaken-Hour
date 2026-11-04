@@ -16,7 +16,8 @@ MonoBehaviour:
   namaTampil: Informatika
   deskripsi: 
   namaAbility: Akses CCTV
-  deskripsiAbility: 
+  deskripsiAbility: Mengintip lewat kamera CCTV yang acak tiap playthrough. Membawa
+    laptop memperlambat gerak
   ikon: {fileID: 0}
   terbukaAwal: 0
   hargaUnlock: 500

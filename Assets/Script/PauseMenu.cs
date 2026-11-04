@@ -38,6 +38,7 @@ public class PauseMenu : MonoBehaviour
 
     private void OnPausePerformed(InputAction.CallbackContext context)
     {
+        if (TangkapManager.selesai) return;
         if (ForsakenClock.selesai) return;
 
         if (isPaused)

@@ -16,7 +16,8 @@ MonoBehaviour:
   namaTampil: Desain Komunikasi Visual
   deskripsi: 
   namaAbility: Night Vision
-  deskripsiAbility: 
+  deskripsiAbility: Melihat dalam gelap. Memakai kamera baterai dan mati saat baterai
+    habis
   ikon: {fileID: 0}
   terbukaAwal: 1
   hargaUnlock: 0

@@ -32,7 +32,8 @@ public class Interactor : MonoBehaviour
 
     bool Terblokir()
     {
-        return PauseMenu.isPaused || Inventory.terbuka || ForsakenClock.selesai;
+        return PauseMenu.isPaused || Inventory.terbuka || ForsakenClock.selesai
+            || TangkapManager.selesai || PemainSembunyi.Bersembunyi;
     }
 
     void Update()
