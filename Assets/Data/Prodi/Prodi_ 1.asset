@@ -16,7 +16,7 @@ MonoBehaviour:
   namaTampil: Teknik Kimia
   deskripsi: 
   namaAbility: Smoke bomb
-  deskripsiAbility: 
+  deskripsiAbility: Asap yang membuat Stalker tertidur. Memakai baterai
   ikon: {fileID: 0}
   terbukaAwal: 0
   hargaUnlock: 500

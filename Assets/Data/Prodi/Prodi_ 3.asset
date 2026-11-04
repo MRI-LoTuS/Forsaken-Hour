@@ -16,7 +16,7 @@ MonoBehaviour:
   namaTampil: Arsitektur
   deskripsi: 
   namaAbility: Shortcut Blueprint
-  deskripsiAbility: 
+  deskripsiAbility: Aktif setelah menemukan blueprint, membuka jalan pintas
   ikon: {fileID: 0}
   terbukaAwal: 0
   hargaUnlock: 500

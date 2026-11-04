@@ -16,7 +16,8 @@ MonoBehaviour:
   namaTampil: Teknik Mesin
   deskripsi: 
   namaAbility: Pengalih Perhatian
-  deskripsiAbility: 
+  deskripsiAbility: Merakit alat dari item crafting yang dikumpulkan, lalu memancarkan
+    suara untuk mengalihkan Stalker
   ikon: {fileID: 0}
   terbukaAwal: 0
   hargaUnlock: 500

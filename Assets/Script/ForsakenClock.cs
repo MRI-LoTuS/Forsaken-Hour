@@ -8,6 +8,7 @@ public class ForsakenClock : MonoBehaviour
 
     public TMP_Text teksPesan;
     public GameObject panelMenang;
+    [SerializeField] TMP_Text teksHadiah;
     public MonoBehaviour[] scriptDimatikan;
     public string menuScene = "MainMenu";
     public Renderer visual;
@@ -56,6 +57,8 @@ public class ForsakenClock : MonoBehaviour
         selesai = true;
         if (visual != null) visual.material.color = warnaMati;
         if (panelMenang != null) panelMenang.SetActive(true);
+            var hasil = RunSelesai.Akhiri(true);
+            if (teksHadiah != null) teksHadiah.text = hasil.Ringkasan();
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

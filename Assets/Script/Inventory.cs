@@ -66,7 +66,8 @@ public class Inventory : MonoBehaviour
 
     void OnInventory(InputAction.CallbackContext context)
     {
-        if (PauseMenu.isPaused || ForsakenClock.selesai) return;
+        if (PauseMenu.isPaused || ForsakenClock.selesai
+        || TangkapManager.selesai || PemainSembunyi.Bersembunyi) return;
         if (terbuka) Tutup();
         else Buka();
     }

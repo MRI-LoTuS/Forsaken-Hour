@@ -222,6 +222,19 @@ public static class ProfileService
         return true;
     }
 
+    public static void LepasKosmetik(string prodiId, TipeKosmetik tipe)
+    {
+        var db = GameDatabase.Instance;
+        int jumlah = Current.terpasang.RemoveAll(t =>
+        {
+            if (t.prodiId != prodiId) return false;
+            var k = db.CariKosmetik(t.kosmetikId);
+            return k != null && k.tipe == tipe;
+        });
+
+        if (jumlah > 0) Simpan();
+    }
+
     public static CosmeticData KosmetikTerpasangUntuk(string prodiId, TipeKosmetik tipe)
     {
         var db = GameDatabase.Instance;

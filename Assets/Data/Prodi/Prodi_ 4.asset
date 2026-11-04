@@ -16,7 +16,8 @@ MonoBehaviour:
   namaTampil: Teknik Elektro
   deskripsi: 
   namaAbility: Lampu Dan Flash
-  deskripsiAbility: 
+  deskripsiAbility: Menyalakan lampu sementara lewat mini-game panel, dan flash yang
+    memengaruhi musuh dalam radius
   ikon: {fileID: 0}
   terbukaAwal: 0
   hargaUnlock: 500
