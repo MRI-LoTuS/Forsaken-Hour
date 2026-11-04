@@ -132,7 +132,7 @@ Status terhadap requirement fungsional (FR-29 dan FR-30).
 | FR-13 | Currency saat run berakhir, termasuk kalah | Selesai | `RunSelesai` (EXP tidak ada, hanya currency) |
 | FR-14 | Menyimpan Player Profile | Selesai | `PlayerProfile`, `ProfileService` |
 | FR-26 | Baterai tersebar di gedung | Selesai | `Item_Baterai` di scene `gedung` |
-| FR-27 | Night vision mati saat baterai habis | Sebagian | `NightVision` (alat smoke Teknik Kimia belum ada) |
+| FR-27 | Night vision mati saat baterai habis | Sebagian | `NightVision` (tampilan UI saat menggunakan kamera belum ada)|
 | FR-28 | Baterai berkurang bertahap | Selesai | `NightVision` |
 | FR-29 | Kunci tersebar acak | Selesai | `KeyManager`, prefab `Key` |
 | FR-30 | Forsaken Clock | Selesai | `ForsakenClock`, prefab `ForsakenClock` |
